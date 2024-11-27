@@ -197,7 +197,7 @@ public class UserController {
         return userForm(model);
     }
 
-
+    // comment to trigger gha idk why they are not triggered ???
     @PostMapping("/editUser/changePassword")
     public ResponseEntity postEditUseChangePassword(@Valid @RequestBody ChangePasswordForm form, Errors errors) {
         try {
