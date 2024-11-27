@@ -28,6 +28,7 @@ jobs:
           SONAR_TOKEN: ${{ secrets.SONAR_TOKEN }}
           SONAR_HOST_URL: ${{ secrets.SONAR_HOST_URL }}
         run: |
+          ls
           ./mvn -B verify sonar:sonar -Dsonar.project.settings=./sonar-project.properties
 
         # Build Docker image
